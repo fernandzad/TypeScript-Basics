@@ -23,3 +23,15 @@ function logPerson(person: Person) {
   // To solve this error we had to make the email parameter optional on the function
   logOptionalEmail(person.email);
 }
+
+/**
+ * If you want to overwrite an existing type from JS like window
+ * for example, we can use interfaces as this:
+ */
+// ERROR: window.videoPlayerJs
+// If we try to use it here, it will starting to complaint
+interface Window {
+  videoPlayerJs: number[];
+}
+window.videoPlayerJs
+// NOW it doesn't
