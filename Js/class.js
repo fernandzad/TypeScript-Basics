@@ -1,3 +1,4 @@
+"use strict";
 var Jedi = /** @class */ (function () {
     function Jedi(nombre, edad, colorSableLuz, especie) {
         this.nombre = 'Obi Wan Kenobi';

@@ -1,3 +1,4 @@
+"use strict";
 console.log('Esto es TypeScript!');
 //bool en TypeScript
 var esTypeScript = true;
@@ -9,10 +10,10 @@ var avengers = 5;
 var villanos;
 var otros = 2; //Not Recommended
 console.log('*Number type test*\n');
-console.log(villanos = 5);
+console.log((villanos = 5));
 //strings in TypeScript
 var refresco = 'Coca-Cola';
-var soda = "Pepsi";
+var soda = 'Pepsi';
 var jugo = "Del Valle"; //Not recommended
 console.log('*String type test*\n');
 console.log(refresco + " " + soda + " " + jugo);
@@ -39,7 +40,7 @@ arreglo.forEach(function (number) {
 //Tuples in TypeScript
 var x;
 // Initialize it
-x = ["hello", 10]; // OK
+x = ['hello', 10]; // OK
 // Initialize it incorrectly
 // x = [10, "hello"]; // Error
 console.log('*Tuple type test*\n');
@@ -66,8 +67,8 @@ var Colortest;
 var colorName = Colortest[2];
 console.log(colorName);
 // for (var i = 0; i < 10; i++) {
-//     setTimeout(function() { 
-//         console.log(i); 
+//     setTimeout(function() {
+//         console.log(i);
 //     }, 100 * i);
 // }
 for (var i = 0; i < 10; i++) {

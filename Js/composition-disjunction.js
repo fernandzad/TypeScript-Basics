@@ -1,3 +1,4 @@
+"use strict";
 var Hybrid = /** @class */ (function () {
     function Hybrid(firstName, lastName, age, hability) {
         this.firstName = firstName;
@@ -14,6 +15,6 @@ function humanFeatures(person) {
 function mutantFeatures(person) {
     return "Hello, " + person.firstName + " " + person.lastName + " with age: " + person.age + " and the power " + person.hability;
 }
-var hybrid = new Hybrid("Jane", "M.", 28, "Super strength");
+var hybrid = new Hybrid('Jane', 'M.', 28, 'Super strength');
 var greeting = mutantFeatures(hybrid);
 console.log(greeting);

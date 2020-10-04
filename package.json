@@ -1,0 +1,24 @@
+{
+  "name": "typescript-basics",
+  "version": "1.0.0",
+  "description": "This repository was created to take notes about TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "compile": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pretty": "prettier --write './**/*.{js,ts,tsx}'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jesusfer2575/TypeScript-Basics.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jesusfer2575/TypeScript-Basics/issues"
+  },
+  "homepage": "https://github.com/Jesusfer2575/TypeScript-Basics#readme",
+  "dependencies": {
+    "prettier": "^2.1.2"
+  }
+}

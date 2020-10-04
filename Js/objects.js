@@ -1,7 +1,8 @@
+"use strict";
 var spiderman = {
     nombre: 'Peter Parker',
     edad: 22,
-    poderes: ['Sentido aracnido']
+    poderes: ['Sentido aracnido'],
 };
 var drStrange = {
     nombre: 'Stephen Strange',
@@ -10,7 +11,7 @@ var drStrange = {
     getPoder: function () {
         var poder = this.poderes[0];
         return poder;
-    }
+    },
 };
 console.log(drStrange.getPoder);
 console.log(spiderman);
