@@ -49,3 +49,10 @@ console.log(processRequest(404));
  * e.g.
  */
 let letterOrNumber: 'a' | 'b' | number;
+
+/**
+ * Intersection with primitive types
+ * causes never type
+ * 
+ */
+let weird: string & number;

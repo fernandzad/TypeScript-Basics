@@ -10,7 +10,6 @@ interface Mutant {
   age: number;
   hability: string;
 }
-
 class Hybrid {
   allAbout: string;
 
@@ -112,6 +111,13 @@ function drawShape(shape: Shape) {
  */
 
 interface User { }
+function processData(data: User) { }
+interface RequestStateWrong {
+  loading: boolean;
+  data?: string;
+  error?: Error;
+}
+
 type RequestState = {
   loading: true,
   data: undefined,
@@ -125,19 +131,20 @@ type RequestState = {
   data: undefined,
   error: Error
 };
-
-function processData(data: User) { }
+// Try to make invalid a state from a object with TYPES
 
 function processRequest2(request: RequestState) {
   if (request.loading) {
     console.log('loading...');
+    request;
     return;
   }
-
+ 
   if (request.error) {
+    request;
     console.log('ops...');
     return;
-  }
+  } 
   
   // Put the mouse over request please :)
   processData(request); // This way we won't need to worry about if our request is valid
@@ -160,3 +167,21 @@ const req3: RequestState = {
   error: Error('some error')
 }
 processRequest2(req);
+
+
+interface Cellphone {
+  ram: string;
+  diskSpace: string;
+  price: string;
+}
+
+interface AppleCellphone extends Cellphone {
+  model: string;
+}
+
+const myCellphone: AppleCellphone = {
+  ram: '6GB',
+  diskSpace: '256GB',
+  price: '$32k',
+  model: 'iPhone 12 Pro Max',
+} 
